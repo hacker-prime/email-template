@@ -1,0 +1,1631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        .webkit {
+        max-width: 600px;
+        }
+
+        /* Header Section */
+        .headerSectionTdTag{
+        padding-top: 12px; 
+        padding-bottom: 12px;    
+        }
+
+        .headerSectionText{
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';
+        font-size: 100%;
+        line-height: 13px;
+        font-weight: 400;
+        color:black;
+        text-transform:uppercase;
+        letter-spacing: 2.4px;                
+        }
+        /* Header Section */
+
+        /* Turtle Section */
+
+        .turtleSection{
+        background-image:url(https://i.ibb.co/6PtfR2p/CR-Turtles-039.jpg);
+        background-repeat: no-repeat;
+        /* https://stackoverflow.com/questions/9262861/css-background-image-to-fit-width-height-should-auto-scale-in-proportion */
+        background-size: cover; 
+        /* padding-bottom: 0%; /* Use this padding % when we include the second text for the turtle section */  
+        /* padding-bottom: 36%; */
+        /* padding-bottom: 1%; */
+        }
+
+        .islandroutesLogo{
+        width: 25%;
+        padding-top: .5%;    
+        }
+
+        .turtleSection ul{
+        list-style: none;
+        padding-left: 0%;
+        color: white;
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';
+        /* font-size: 65%; */
+        font-size: 125%;    
+        }
+
+        .turtleSectionText{
+        font-weight: 800;   
+        padding-bottom: 1.5%; 
+        }
+
+        .turtleSectionTextB{
+        padding-top: 2.5%;
+        font-weight: 600;    
+        }
+
+        .turtleSectionB{
+        color: white;
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';
+        padding-top: 22.5%;
+        font-weight: 600;    
+        font-size: 110%;
+        padding-top: 3%;
+        /* font-size: 90%;         */
+        }
+
+        .turtleSectionC{
+        color: white;
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';
+        padding-top: 22.5%;
+        font-weight: 600;    
+        font-size: 110%;
+        padding-top: 40%;
+        /* font-size: 90%;         */
+        }
+         
+
+        /* Turtle Section */
+
+        /* Introductory Text */
+
+        .introductoryText{
+        background-image:url(https://c4.wallpaperflare.com/wallpaper/537/411/577/sea-blue-water-boat-wallpaper-preview.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;       
+        }
+
+        .introductoryTextATags{
+        /* padding-top:15%;    
+        padding-bottom: 15%; */
+        padding-top: 5%;
+        padding-bottom: 34%;  
+        font-size: medium;
+        color:white; 
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';
+        }
+
+        .introductoryTextATags2{
+        padding-top:15%;        
+        padding-bottom: 15%;  
+        color:white; 
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';    
+        }
+
+        .introductoryText ul{
+        list-style: none;    
+        padding-left:0%;
+        }
+
+        /* Introductory Text */
+
+
+        /* Meet The Team */
+        .meetTheTeam{
+        padding-top: 5%;
+        padding-bottom:5%;
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';    
+        }
+
+        .meetTheTeamText{
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';
+        padding-bottom: 5%;
+ 
+        }
+
+        .meetTheTeamBackgroundImg{
+        background-image:url(https://i.ibb.co/vLPjnN9/IRAT-Newsletter-March-2020-Consumer-04.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;   
+        width: 60%;
+        padding-bottom:5%;
+        /* padding-bottom: 75%; Apparently this should be used if background-size equals cover   */
+        }
+
+        .meetTheTeamNameAndTitle{    
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';
+        font-size: small;        
+        }
+
+        .meetTheTeamName{
+        font-weight:bold;    
+        }
+
+        .meetTheTeamNameAndTitlePadding{
+        padding-top:120% ;    
+        }
+
+        .learnMore{
+        padding-bottom: 2.5%;    
+        }
+
+        .learnMoreButton{
+        text-decoration: none;
+        padding:0.6em 2em;
+        border-radius: 20px;
+        color:#fff;
+        background-color:#1976d2;
+        font-size:1.1em;
+        border:0;
+        cursor:pointer;
+        margin:1em;    
+        }    
+
+        /* https://css-tricks.com/gradient-borders-in-css/ */
+        .meetTheTeamFirstTdTag{
+        /* border-image:linear-gradient( to bottom, #e6e6fa, #edecfb, #f3f2fc, #f9f9fe, #ffffff ) 10% !important;    
+        border-width:25px;
+        border-style:solid; */
+        border: 7px solid #E6E6FA;
+        background-image: linear-gradient(to bottom, #f8f8ff, #fafaff, #fcfbff, #fdfdff, #ffffff);
+        }
+
+        /* Meet The Team */
+
+        /* Testimonial */
+
+        .guestTestimonial{
+        padding-top: 5%;
+        padding-bottom:5%;
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';    
+        }
+
+        .testimonialTextAndImg{
+        display: inline-block;    
+        }
+
+        .about {
+        /* background-color: #2c0242; */
+        /* padding: 30px; */
+        vertical-align: text-top;
+        /* margin-top: 20px; */
+        display: inline-block;
+        text-align: left;
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';  
+        }
+
+        img {
+        max-width: 100%;
+        /* border-radius: 15px 15px; */
+        width: 315px;
+        }
+
+        h2, p, img {
+        display: inline-block;
+        margin: 0px;
+        vertical-align: middle;
+        padding-left: 5%;
+        }
+
+        .testimonialQuote{
+        list-style:none;
+        padding-left:0%;
+        /* padding-top:50%;  */
+        color:black;   
+        }
+
+        .viewTestimonialButton{
+        text-decoration: none;
+        padding:0.6em 2em;
+        border-radius: 20px;
+        color:#fff;
+        background-color:#1976d2;
+        font-size:1.1em;
+        border:0;
+        cursor:pointer;
+        margin:1em;     
+        }
+
+
+         /* Testimonial */
+
+
+        /* Island Routes is here for you section  */
+
+        .hereForYou{
+        padding-top:2.5%; 
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';   
+        font-size:medium;
+        color:black;
+        }
+
+        .viewDetailsButton{
+        text-decoration: none;
+        padding:0.6em 2em;
+        border-radius: 20px;
+        color:#fff;
+        background-color:#1976d2;
+        font-size:1.1em;
+        border:0;
+        cursor:pointer;
+        margin:1em;      
+        }
+
+        /* Island Routes is here for you section  */
+
+
+        /* New Tours */
+        .newToursHeader{
+        font-weight:800;
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';
+        padding-left:0% !important;
+        padding-bottom: 5%;
+        color:black!important;    
+        }
+
+        .newToursSections {
+        /* background-color: #2c0242; */
+        /* padding: 30px; */
+        vertical-align: text-top;
+        /* margin-top: 20px; */
+        display: inline-block;
+        text-align: left;  
+        }
+
+        .newToursSectionsUlTag{
+        list-style:none;
+        padding-left:0%;
+        /* padding-top:50%;  */
+        color:black;   
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';
+        }
+
+        /* https://www.webfx.com/blog/web-design/circular-images-css/ */
+        .newToursSectionsFirstImg{
+        width: 225px;
+        height: 225px;
+        border-radius: 50%;    
+        }
+
+        .viewDetailsButtonNewTours{
+            
+        text-decoration: none;
+        padding:0.6em 2em;
+        border-radius: 20px;
+        color:#fff;
+        background-color:#1976d2;
+        font-size:1.1em;
+        border:0;
+        cursor:pointer;
+        /* margin:1em;       */
+        }
+
+        .newToursSections2 {       
+        vertical-align: text-top;
+        display: inline-block;
+        text-align: left;  
+        padding-left: 5%;
+        padding-right:5%;
+        }
+
+        .newToursSectionsSecondImg{
+        width: 225px;
+        height: 225px;
+        border-radius: 50%;    
+        }
+
+
+
+        /* New Tours */
+
+
+        /* Why Book With Island Routes */
+        .whyBookHeader{
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';     
+        font-weight:800;
+        }
+
+        /* https://stackoverflow.com/questions/22592064/how-to-align-text-below-an-image-in-css/22592136 */
+        div.item {
+        /* To correctly align image, regardless of content height: */
+        vertical-align: top;
+        display: inline-block;
+        /* To horizontally center images and caption */
+        text-align: center;
+        /* The width of the container also implies margin around the images. */
+        width: 120px;
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';
+        }
+        .whyBookImg {
+        width: 100px;
+        height: 100px;
+        /* background-color: grey; */
+        }
+        .caption {
+        /* Make the caption a block so it occupies its own line. */
+        display: block;
+        padding-top:5%;
+        }
+
+
+        /* Why Book With Island Routes */
+
+        /* Book Now */
+        .boookNowCallUs{
+        font-size:large;
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';    
+        }
+        .islandRoutesPhoneNumber{
+        font-size: x-large;    
+        font-weight: 800;
+        text-decoration:underline;
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';
+        }
+        /* Book Now */
+
+        /* Shop Our Instagram  */
+        .shopNowDisplayInlineBlock{
+        display: inline-block;    
+        }
+        .shopNowDisplayInlineBlockImg{
+        display: inline-block; 
+        padding-left:0%;
+        vertical-align: bottom; 
+        width:30px;
+        height:30px;  
+        }
+        div.shopItem {
+        /* To correctly align image, regardless of content height: */
+        vertical-align: top;
+        display: inline-block;
+        /* To horizontally center images and caption */
+        text-align: center;
+        /* The width of the container also implies margin around the images. */
+        width: 170px;
+        }
+        .shopItemImg {
+        width: 150px;
+        height: 150px;
+        }
+
+
+        /* Shop Our Instagram  */
+
+
+        /* Talk To Us */
+        .talkToUs{
+        list-style:none;
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';
+        padding-left:0%;    
+        }
+
+        .talkToUsImg{
+        width:600px;
+        padding-left:0%;    
+        }
+
+        .talkToUsHeader{
+        color:#1976d2;
+        font-size:x-large;  
+        font-weight: 800;  
+        }
+
+        .followUsMain{
+        color:white;
+        font-style:italic;
+        display:inline-block;
+        /* padding-right:25%;     */
+        }
+
+        .followUsMainWrapper{
+        list-style:none; 
+        /* https://stackoverflow.com/questions/58140551/html-email-development-and-margin-block */
+        margin: 0;   
+        }
+
+        .followUsImg{
+        width:25px !important;
+        height:25px !important;    
+        padding: 10px;
+        /* https://stackoverflow.com/questions/52829623/how-to-make-a-color-white-using-filter-property-in-css */
+        /* filter:  brightness(0) invert(1); */
+        }
+
+        /* Talk To Us */
+
+        /* Award Section */
+        .awardSection{
+        display: inline-block;    
+        vertical-align: top;
+        }
+
+        .firstAwardSection{
+        padding-right:15%;    
+        }
+
+        .leftImageTextToTheRightOfIt{
+        display: inline-block;   
+        vertical-align: top; 
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag'; 
+        }
+
+        .awardSectionImg{
+        width:50px;
+        height: 50px;   
+        display: inline-block; 
+        padding: 10px;
+        }
+
+        
+        .awarSectionFirstDiv{
+        background-color: #F5F5F5;
+        }
+
+        .footerImg{
+        height:100px;
+        width:175px; 
+        padding:10px;   
+        }
+        .footerText{
+        padding: 25px;
+        list-style:none;
+        margin:0;
+        text-align:center;
+        padding-top:5%;
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';     
+        }
+
+        .footerText2{
+        list-style:none;
+        margin:0;
+        text-align:left;
+        padding-top:5%;
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';     
+        }
+
+
+        /* Award Section */
+
+        @media screen and (max-width: 640px) {     
+	                                                        
+        .hide {
+        display:none !important;
+        }   
+
+        .mobile-only {
+        display: block !important; 
+        max-height: none !important;
+        max-width: 640px !important;
+        visibility: visible !important;
+        }   
+
+         .responsivetable{
+        width:100% !important;
+        }           
+        
+        .responsivetable90{
+        width:90% !important;
+        }
+
+        .turtleSection{
+         /* padding-bottom:13%;    */
+         /* padding-bottom:0%;   */
+         /* padding-bottom: 22%; */
+         /* padding-bottom: 35%;     */
+         
+        }
+
+        .turtleSection ul{
+        font-size: 70% !important;
+        }
+
+        .turtleSectionB{
+        font-size: 50% !important;
+        font-weight: 800;
+        color:white;
+        /* padding-top: 40%;  */
+        padding-bottom: 2.5%;
+        padding-top:5%;
+        }
+
+        .turtleSectionC{
+        font-size: 50% !important;
+        font-weight: 800;
+        color:white;
+        /* padding-top: 40%;  */
+        padding-bottom: 2.5%;
+        }
+
+        .introductoryTextATags {
+        font-size: 45% !important;
+        padding-top: 15% !important;
+        font-weight: 800;
+        }
+
+        /* https://css-tricks.com/gradient-borders-in-css/ */
+        /* .meetTheTeamFirstTdTag{
+        border-image:linear-gradient( to bottom, #e6e6fa, #edecfb, #f3f2fc, #f9f9fe, #ffffff ) 10% !important;       
+        border-width:7px;
+        border-style:solid;
+        } */
+
+        .meetTheTeamNameAndTitlePadding{
+        padding-top:115% !important;    
+        }
+
+        .meetTheTeamText{
+        font-size: xx-small !important;  
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';
+        padding-bottom: 5%;
+ 
+        }
+
+        .questionSectionTheActualQuestion{
+         font-size:large !important;   
+        } 
+
+        .questionSectionTheActualAnswer{
+        font-size: xx-small !important;        
+        }
+
+        .learnMore{
+        font-size: xx-small !important;
+        padding-bottom: 2.5%;            
+        }
+
+        .learnMoreButton{
+        text-decoration: none;
+        color: black;
+        padding:0.6em 2em;
+        border-radius: 20px;
+        color:#fff;
+        background-color:#1976d2;
+        font-size:1.1em;
+        border:0;
+        cursor:pointer;
+        margin:1em;    
+        }
+
+
+
+
+         /* Testimonial */
+
+         
+        .container {
+        background: #fff;
+        /* width: 100%;
+        max-width: 480px;
+        min-width: 320px; */
+        margin: 2em auto 0;
+        padding: 1.5em;
+        }
+
+        p { margin-bottom: 1.5em; }
+        p:last-child { margin-bottom: 0; }
+
+        blockquote {
+        display: block;
+        border-width: 2px 0;
+        border-style: solid;
+        border-color: #eee;
+        padding: 1.5em 0 0.5em;
+        margin: 1.5em 0;
+        position: relative;
+        }
+        blockquote:before {
+        content: '\201C';
+        position: absolute;
+        top: 0em;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        width: 3rem;
+        height: 2rem;
+        font: 6em/1.08em 'PT Sans', sans-serif;
+        color: #666;
+        text-align: center;
+        }
+        blockquote:after {
+        content: "\2013 \2003" attr(cite);
+        display: block;
+        text-align: right;
+        font-size: 0.875em;
+        color: #e74c3c;
+        }
+
+        .testimonialQuote{
+        padding-top:0% !important;    
+        }
+
+        img{
+        padding-left:0% !important;    
+        }
+
+        .about{
+        text-align: center !important;    
+        }
+
+        .viewTestimonialButton{
+        font-size: .7em !important; 
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';       
+        }
+
+         /* Testimonial */   
+
+        /* Island Routes is here for you section  */
+        .hereForYou{
+        font-size:xx-small !important;  
+        color:black !important; 
+        }
+
+        .hereForYouHeader{
+        font-size:small !important;  
+        padding-top: 5%;  
+        }
+
+        .viewDetailsButton{
+
+        font-size: .7em !important; 
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';   
+
+        }
+
+        /* Island Routes is here for you section  */ 
+
+        /* New Tours */
+
+        .newToursHeader{
+        font-size: small !important;    
+        }
+
+        .viewDetailsButtonNewToursWrapper{
+        padding-top:5%;
+        padding-bottom: 10%;
+        text-align:center;    
+        }
+
+        .viewDetailsButtonNewTours {
+        font-size: .7em !important; 
+        font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';   
+        }
+
+        /* New Tours */
+
+        /* Why Book With Island Routes */   
+
+        .whyBookImg {
+            width: 60px !important;
+            height: 60px !important;
+            /* background-color: grey; */
+        }
+
+        .caption {
+        font-size: x-small !important;
+        padding-top: 10% !important;
+        }
+
+        /* Why Book With Island Routes */       
+
+        /* Book Now */
+        .boookNowCallUs{
+        font-size:small !important;
+        }
+        .islandRoutesPhoneNumber{
+        font-size: medium !important;          
+        }
+
+        .openingTimes{
+        font-size:x-small;    
+        }
+
+        /* Book Now */
+
+        /* Shop Our Instagram */
+
+        .shopNowDisplayInlineBlock{
+        font-size:x-small;    
+        }
+
+        .shopNowDisplayInlineBlockImg{
+        width:15px;
+        height:15px;  
+        vertical-align: bottom !important;
+        }
+
+        /* Shop Our Instagram */
+
+        
+        /* Talk To Us */
+        .talkToUsHeader{
+        font-size:large !important;  
+        font-weight: 800;  
+        }
+
+        .talkToUsText{
+        font-size:x-small;    
+        }
+
+        .followUsMainWrapper{
+        padding-left:0%;    
+        }
+
+        .followUsMain{     
+        display:block !important;
+        padding-right:0%;    
+        }
+
+        .followUs{
+        display:inline-block !important;       
+        }
+
+        /* Talk To Us */
+
+        /* Award Section */
+
+        .awardSectionImg {
+        width: 40px !important;
+        height: 40px !important;
+        display: inline-block;
+        /* padding: 10px; */
+        }
+
+        .leftImageTextToTheRightOfIt {
+        font-size: xx-small !important;
+        }
+
+        .firstAwardSection {
+        padding-right: 0% !important;
+        }
+
+        .awardSectionImg {    
+        padding: 0px !important;
+        }
+
+        .awarSectionFirstDiv{
+        padding: 2%;    
+        }
+
+        .footerImg{
+        height:75px !important;
+        width:100px !important;       
+        }
+
+        /* Award Section */
+
+        /* Footer Section */
+        .footerText{
+        font-size:x-small;
+        /* padding-left:0%;     */
+        }
+
+        
+        .footerText2{
+        font-size:x-small;
+        padding: 25px;  
+        }
+
+   
+        /* Footer Section */
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <center>
+        <div class="webkit">
+
+            <!-- Header Section -->
+
+                <table background-color:"white"; border="0" cellpadding="0" cellspacing="0" class="hide" width="100%">
+                    <tbody>
+                        <tr>
+                            <td align="center" class="headerSectionTdTag">
+                                <table border="0" cellpadding="0" cellspacing="0" class="responsivetable" style="width: 620px;" width="620">
+                                <tbody><tr>
+                                    <td align="center" class="headerSectionText">Mar 2020</td>
+                                </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            <!-- Header Section -->
+            
+            <!-- MOBILE BANNER -->
+            <!--[if !mso]>
+            <!-->
+                <div class="mobile-only" style="max-height: 0; overflow: hidden; display: none; mso-hide: all;">
+                    <table  style="background-color:white";" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td align="center" style="padding-top: 13px; padding-bottom: 13px;">
+                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable90" style="width: 640px;"
+                        width="640">
+                            <tr>
+                            <td align="center" class="headerSectionText">Mar 2020</td>
+                            </tr>
+                        </table>
+                        </td>
+                    </tr>
+                    </table>
+                </div>
+                <!--<![endif]-->
+                <!-- END MOBILE BANNER -->
+
+            <!-- Turtle Section -->
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                    <tr>
+                        <td align="center">
+                            <div align="center" class="turtleSection">
+                                <img src="https://i.ibb.co/ZTtZ64R/IRATS-LOGO.png" class="islandroutesLogo">
+                                <!-- <ul>
+                                    <li class="turtleSectionText">DESTINATION OF THE MONTH</li>
+                                    <li class="turtleSectionTextB">BARBADOS</li>
+                                </ul> -->
+                                <div align="center" class="turtleSectionB">
+                                    <a style="color:white;">DESTINATION OF THE MONTH</a> <br/>
+                                    <a style="color:white;">BARBADOS</a>
+                                </div>
+
+                                <div align="center" class="turtleSectionC">
+                                    <a style="color:white;">IT'S A DESTINATION</a> <br/>
+                                    <a style="color:white;">YOU NEED TO EXPLORE!</a>
+                                </div>
+                                
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Turtle Section -->
+
+            <!-- Introductory Text  -->
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                <tbody>
+                    <tr>
+                        <td align="center">
+                            <div align="center" class="introductoryText">
+                                <!-- <ul>
+                                    <li>XXX</li>
+                                    <li>XXX</li>
+                                    <li>XXX</li>
+                                    <li>XXX</li>
+                                    <li>XXX</li>
+                                    <li>XXX</li>
+                                    <li>XXX</li>
+                                </ul> -->
+                                <div class="introductoryTextATags">    
+                                    <a style="color:white;">The lively island of Barbados is a destination popular among jet-setters and</a> <br/>
+                                    <a style="color:white;">adventure seekers. This vibrant island is distinctively Caribbean with</a> <br/>
+                                    <a style="color:white;">charming towns that are unique in landscape, ambiance and culture.</a> <br/>                                                   
+                                    <a style="color:white;">Known for its great shopping, exceptional cuisine, world-class festivals,</a> <br/>
+                                    <a style="color:white;">pristine beaches, swashbuckling history, and lush forests inhabited by the</a> <br/>
+                                    <a style="color:white;">famous Green Monkeys, it's a destination you need to explore!</a> <br/> 
+                                </div> 
+                                <!-- <div class="introductoryTextATags2">
+                                    <a>Known for its great shopping, exceptional cuisine, world-class festivals,</a> <br/>
+                                    <a>pristine beaches, swashbuckling history, and lush forests inhabited by the</a> <br/>
+                                    <a>famous Green Monkeys, it's a destination you need to explore!</a> <br/> 
+                                </div>    -->
+                            </div>                            
+                        </td>
+                    </tr>
+                </tbody>    
+
+            </table>
+
+            <!-- Introductory Text  -->
+
+            <!-- Meet The Team -->
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+
+                <tbody>
+                    <tr>
+                        <!-- https://css-tricks.com/gradient-borders-in-css/ -->
+                        <td align="center" class="meetTheTeamFirstTdTag">
+                            <div align="center" class="meetTheTeam">
+
+                                <a style="color:black;font-weight: 800;"> Meet The Team</a>
+            
+                            </div>
+            
+                            <div style="padding-bottom: 5%;">
+                                <hr style="width:85%;height:2px;border-width:0;color:white;background-color:black;">
+                            </div>
+            
+                            <div class="meetTheTeamBackgroundImg">
+                                <div class="meetTheTeamNameAndTitlePadding">
+                                    <div style="width:70%;border: 1px solid black;background-color:white;">
+                                        <div class="meetTheTeamNameAndTitle">
+                                            <a style="color:black;" class="meetTheTeamName">BIBI ABRAHIM</a> <br/>
+                                            <a style="color:black;">Lead Tour Specialist</a>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+
+                            <div align="center" class="meetTheTeamText">
+
+                                <a style="color:black;">Meet Bibi Abraham, Lead Tour Specialist on the beautiful island of</a> <br/>
+                                <a style="color:black;">Barbados. We sat down to chat about her experiences living in Barbados</a> <br/>
+                                <a style="color:black;">and working for Island Routes...</a>    
+
+                            </div>
+
+                                         
+
+                        </td>
+                    </tr>
+                </tbody>    
+
+
+            </table>    
+
+            <!-- Meet The Team -->
+
+            <!-- Questions -->
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tbody>
+                <tr>
+                    <td valign="top">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <tbody><tr>
+                                <td valign="top" align="center" style="padding-top: 5%;font-family:Arial; font-size:22px; color:#1976d2;; font-weight: bold;" width="35">
+                                                                        Q:</td>
+                                                                        <td  valign="top" align="left" style="padding-top: 5%;font-family:Arial; font-size:22px; color:#1976d2;  font-weight: bold;" class="questionSectionTheActualQuestion">
+                                                                        WHAT MAKES BARBADOS SPECIAL?
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" align="center" style="font-family:Arial; font-size:22px; color:#000000; font-weight: bold;">
+                                                                        A:</td>
+                                                                        <td valign="top" align="left" style="font-family:Arial; font-size:15px; color:#000000; line-height:24px;" class="questionSectionTheActualAnswer">
+                                                                        Not only does Barbados have some of the most beautiful beaches in the world, it has a real authentic Caribbean culture, an interesting colonial history, some of the regions friendliest people and amazing restaurants. Our coral island of Barbados offers you more than 80 pristine white-sand beaches, including many that are recognized as the most beautiful beaches in the world. Between the beach and the ocean, we offer unlimited ways to have fun! Barbados has over 3000 hours of sunshine each year. The hottest month recorded was in April and the coolest in January. The wettest month is November, but even then, the sun is always just around the corner.
+                                        <br><br>
+                                        Barbados was the only holiday destination in the world to be privileged enough to have a scheduled flight with Concord. Concord stopped flying to the island in 2003 when it was decommissioned, but there is an incredibly interesting concord museum located beside the island's main international airport – Grantley Adams. During the years Concord flew, it made more than 7000 flights to Barbados and carried lots of famous people including Elton John, Prince Albert of Monaco, Mick Jagger and Pierce Brosnan!
+                                        <br><br>
+                                        The island not only produces the world's oldest rum, but it also 
+                                        produces one of the best! Mount Gay Rum dates back to 1703 and today is sold in over 110 countries worldwide. The distillery is 
+                                        definitely worth a visit if you are on the island.
+                                        <br><br>
+                                        Cricket is the country's national sport and local Bajans are 
+                                        obsessed. In fact, for such a tiny Island, Barbados has produced some of the world's greatest cricketing legends and is home of the famous cricket ground, the Kensington Oval.
+                                        <br><br>
+                                        Biggest celebrity? Well yes, Rihanna is from Barbados! Before she became an international singing superstar, she was born on the beautiful island of Barbados on February 20th 1988 in St. Michael Parish south-west of the island. Rihanna grew up in Westbury Road which was renamed Rihanna Drive on 30th November 2017 for the country’s 51st year of independence.
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="57"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" align="center" style="font-family:Arial; font-size:22px; color:#1976d2;; font-weight: bold;" width="35">
+                                                                        Q:</td>
+                                                                        <td valign="top" align="left" style="font-family:Arial; font-size:22px; color:#1976d2;  font-weight: bold;" class="questionSectionTheActualQuestion">
+                                                                        WHAT IS YOUR FAVOURITE THING 
+                                        ABOUT LIVING IN BARBADOS?
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" align="center" style="font-family:Arial; font-size:22px; color:#000000; font-weight: bold;">
+                                                                        A:</td>
+                                                                        <td valign="top" align="left" style="font-family:Arial; font-size:15px; color:#000000; line-height:24px;" class="questionSectionTheActualAnswer">
+                                                                        Definitely the vibrant, friendly culture of the Bajan people. Let’s face it, life in Barbados is relaxed. A ‘Bajan minute’ can last longer than most and ‘island time’ is very much practiced because the attitude of the people is quite laid back. This can be frustrating to some, however, the quality of life on the island is good and the people are genuinely caring and friendly.
+                                        <br><br>
+                                        The ‘Gem of the Caribbean’, Barbados is the place where solid friendships are made and vacation memories will last a lifetime – a lot of this has to do with us, the people.
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="57"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" align="center" style="font-family:Arial; font-size:22px; color:#1976d2;; font-weight: bold;" width="35">
+                                                                        Q:</td>
+                                                                        <td valign="top" align="left" style="font-family:Arial; font-size:22px; color:#1976d2;  font-weight: bold;" class="questionSectionTheActualQuestion">
+                                                                        WHAT’S YOUR FAVOURITE ISLAND 
+                                        ROUTES TOUR?
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" align="center" style="font-family:Arial; font-size:22px; color:#000000; font-weight: bold;">
+                                                                        A:</td>
+                                                                        <td valign="top" align="left" style="font-family:Arial; font-size:15px; color:#000000; line-height:24px;" class="questionSectionTheActualAnswer">
+                                                                        The Sun, Sand and Snorkel catamaran cruise of course! This five hour catamaran lunch cruise has the world’s best crew members who cater to your every need. Whether you are a local or visitor to the island they value and treat you the same and this is much 
+                                        appreciated. You get a chance to swim with the sea turtles, see the marine life and shipwrecks, take a stroll on the beach and enjoy a delicious local buffet lunch. The crew also points out the famous houses of Rihanna and Simon Cowell, just to name a few as we 
+                                        sail our platinum West Coast.
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="57"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" align="center" style="font-family:Arial; font-size:22px; color:#1976d2;; font-weight: bold;" width="35">
+                                                                        Q:</td>
+                                                                        <td valign="top" align="left" style="font-family:Arial; font-size:22px; color:#1976d2;  font-weight: bold;" class="questionSectionTheActualQuestion">
+                                                                        FILL IN THE BLANK. YOU CAN'T LEAVE 
+                                        BARBADOS WITHOUT ______ .
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" align="center" style="font-family:Arial; font-size:22px; color:#000000; font-weight: bold;">
+                                                                        A:</td>
+                                                                        <td valign="top" align="left" style="font-family:Arial; font-size:15px; color:#000000; line-height:24px;" class="questionSectionTheActualAnswer">
+                                                                        The Food!!!.
+                                        <br><br>
+                                        Cou-cou and flying fish is the national dish of Barbados but here are some other local tasty treats: Macaroni Pie, Fish Cakes, Breadfruit, Conkies and Sweet Bread
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="57"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" align="center" style="font-family:Arial; font-size:22px; color:#1976d2;; font-weight: bold;" width="35">
+                                                                        Q:</td>
+                                                                        <td valign="top" align="left" style="font-family:Arial; font-size:22px; color:#1976d2;  font-weight: bold;" class="questionSectionTheActualQuestion">
+                                                                        WHAT'S YOUR FAVOURITE PART ABOUT 
+                                        BEING ON THE #LIVEFUNNER TEAM?
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" align="center" style="font-family:Arial; font-size:22px; color:#000000; font-weight: bold;">
+                                                                        A:</td>
+                                                                        <td valign="top" align="left" style="font-family:Arial; font-size:15px; color:#000000; line-height:24px;" class="questionSectionTheActualAnswer">
+                                                                        To be a part of the team who persuades our guests to venture off resort to explore and experience our beautiful island is indeed a privilege. Our guests get the opportunity to learn about our rich 
+                                        culture and history, they interact with locals along the way who love to teach them how to speak in our sweet Caribbean accent and to their delight, our kind locals even teach our guest how to wine! 
+                                        Imagine how we laugh at the tour desk when they return from their excursion and try to teach us. We really are the ones who help our guests to #livefunner!
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="57"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" align="center" style="font-family:Arial; font-size:22px; color:#1976d2;; font-weight: bold;" width="35">
+                                                                        Q:</td>
+                                                                        <td valign="top" align="left" style="font-family:Arial; font-size:22px; color:#1976d2;  font-weight: bold;" class="questionSectionTheActualQuestion">
+                                                                        WHY SHOULD VISITORS/TRAVEL AGENTS CHOOSE ISLAND ROUTES?
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" align="center" style="font-family:Arial; font-size:22px; color:#000000; font-weight: bold;">
+                                                                        A:</td>
+                                                                        <td valign="top" align="left" style="font-family:Arial; font-size:15px; color:#000000; line-height:24px;" class="questionSectionTheActualAnswer">
+                                                                        Visitors and Travel Agents are looking for a brand they can trust and they definitely have this with Island Routes. We have over 500 unique tour experiences so whatever adventure you are seeking you are guaranteed to find it with us. All of our excursions have gone through an assessment of safety standards and procedures as well as guest satisfaction ratings.
+                                        <br><br>
+                                        We continue to live up to our outstanding reputation having received the Word Travel Award for World’s Leading Caribbean Attraction Company seven years in a row and Island Routes is the only tour company to receive a Six Star Diamond award from the American Academy of Hospitality Sciences. In addition, we have also been awarded many TripAdvisor Certificate of Excellence Awards.
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="40"></td>
+                                                                    </tr>
+                                                                </tbody></table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td valign="top" align="center" style="font-family:Arial; font-size:14px; color:#000; line-height:24px;" class="learnMore">
+                        <i>Learn more about our experiences in Barbados:</i><br/>
+                        <div style="padding-bottom:2.5%;"></div>
+                        <a href="" class="learnMoreButton"> > LEARN MORE</a>
+                    </td>
+                </tr>
+
+            </tbody>    
+            
+            </table>    
+
+            <!-- Questions -->
+
+
+            <!-- Testimonial -->
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <!-- <td style="border: 5px solid deepskyblue;"> -->
+                            <div style="border: 5px solid deepskyblue;">    
+
+                                <div align="center" class="guestTestimonial">
+
+                                    <a style="color:black;font-weight: 800;"> Guest Testimonial</a>
+                
+                                </div>
+                
+                                <div style="padding-bottom: 5%;">
+                                    <hr style="width:85%;height:2px;border-width:0;color:white;background-color:black;">
+                                </div>
+
+                            
+
+                                <div align="center">
+
+                                    <div class="about">
+                                        <ul class="testimonialQuote">
+                                            <li style="font-weight: 800;">SUN, SAND,</li>
+                                            <li style="font-weight: 800;">SNORKELING</li>
+                                            <li style="font-weight: 800;">CRUISE BARBADOS</li>
+                                            <li>"We had a great time on the</li>
+                                            <li>sun, sand and snorkel cruise!</li>
+                                            <li>Swimming with the turtles</li>
+                                            <li>was actually more fun than I</li>
+                                            <li>thought it'd be, seeing all the</li>
+                                            <li>fish and stingrays.</li>
+                                            <li>The shipwrecks were coll to</li>
+                                            <li>see also! But we really</li>
+                                            <li>enjoyed the sailing!</li>
+                                            <li>The Captain and crew were</li>
+                                            <li> awesome!  Playing music and</li>
+                                            <li>dancing, while enjoying</li>
+                                            <li>drinks, what a great time and</li>
+                                            <li>memory!Thanks!"</li>
+                                            <li>- Gregg</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="about">
+                                        <!-- <h2>Title</h2>
+                                        <p>text</p> -->
+                                        <img src="https://i.ibb.co/GQTnfCy/barbados-Beach.jpg" alt="">
+                                    </div>  
+                                    
+                                
+
+                                </div>                            
+
+                            </div> 
+                            
+                            <div align="center">
+                                <div style="padding-bottom:5%;"></div>
+                                <div style="">
+                                <a href="" class="viewTestimonialButton"> > VIEW TESTIMONIALS</a>
+                                </div>
+                            </div>
+                          
+                        </td>
+                        
+                    </tr>
+                </tbody>
+
+            </table>            
+
+
+            <!-- Testimonial -->
+
+
+            <!-- Island Routes is here for you section -->
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <div style="padding-top:5%;">
+                                <div align="center">
+
+                                    <h2 class="hereForYouHeader" style="font-weight:800;
+                                    font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'HCo Verlag';
+                                    padding-left:0% !important;
+                                    padding-bottom: 5%;
+                                    color:black!important;
+                                    ">
+                                    ISLAND ROUTES IS HERE FOR YOU
+                                    </h2>   
+
+                                    <a href="https://m.youtube.com/watch?cm_mmc=email-_-newsletter-_-consumer-_-video_irat&t=13s%2F%3Futm_medium%3Demail&utm_campaign=newsletter_v1&utm_content=video_irat_none&utm_source=consumer&utm_term=mar20_r1&v=6eL-7fG1IjI">    
+                                    <img style="padding-left:0% !important;" src="https://i.ibb.co/MgxYKjK/IRAT-Newsletter-March-2020-Consumer-08.jpg" alt="">
+                                    </a>
+
+                                    <div align="center" class="hereForYou">
+                                        <a>In times of uncertainty, one thing is for certain, Island</a><br/> 
+                                        <a>Routes is a brand that you can count on and trust; and we'll</a><br/> 
+                                        <a>get through this hardship together.</a>  
+                                    </div> 
+
+                                    <div style="padding-top:5%;">
+                                        <a href="https://m.youtube.com/watch?cm_mmc=email-_-newsletter-_-consumer-_-video_irat&t=13s%2F%3Futm_medium%3Demail&utm_campaign=newsletter_v1&utm_content=video_irat_none&utm_source=consumer&utm_term=mar20_r1&v=6eL-7fG1IjI" class="viewDetailsButton"> > VIEW DETAILS</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </td>        
+                    </tr>            
+                </tbody>            
+
+            
+            </table>    
+
+
+
+            <!-- Island Routes is here for you section -->    
+
+            <!-- New Tours -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div style="padding-top:5%;padding-left: 12%;">
+                            </div>
+
+                                <div align="center">
+
+                                    
+                                    <h2 class="newToursHeader">
+                                    New Tours
+                                    </h2>  
+
+                                </div>
+
+                                <div style="padding-bottom: 5%;">
+                                    <hr style="width:85%;height:2px;border-width:0;color:white;background-color:black;">
+                                </div>
+
+                                <div align="center" style="padding-bottom: 10%;">
+
+                                    <div class="newToursSections">
+
+                                        <ul class="newToursSectionsUlTag">
+                                            <li style="font-weight: 800;">TURKS & CAICOS</li>
+                                            <li style="font-weight: 500;">PRIVATE CATAMARAN</li>
+                                            <li style="font-weight: 500;">CRUISE ST.LUCIA</li>
+                                            <li style="padding-bottom:10%;">(1-2 & 1-4PAX)</li>
+                                            <li style="font-size: small;">Rates starting from: <a style="font-weight: 800;">$312.50</a></li>
+                                            <li style="font-size: small;padding-bottom:10%;">Duration: <a style="font-weight: 800;">2-6 hours</a></li>
+                                            <li style="font-size: small;">Kick back, relax and enjoy the</li>                                            
+                                            <li style="font-size: small;">goregous views of Saint Lucia on</li>                                            
+                                            <li style="font-size: small;">one of our private catamaran</li>
+                                            <li style="font-size: small;">cruises</li>                                                                                        
+                                        </ul>
+                                        <div class="viewDetailsButtonNewToursWrapper">
+                                            <a href="" class="viewDetailsButtonNewTours"> > VIEW DETAILS</a>
+                                        </div> 
+
+                                    </div>
+
+                                    <div class="newToursSections">
+                                        <!-- https://www.webfx.com/blog/web-design/circular-images-css/ -->
+                                        <img class="newToursSectionsFirstImg" src="https://cdn.islandroutes.com/tour-images/2773/med_8esau.jpg" alt="">
+                                    </div>                                 
+                                                        
+
+                                </div>       
+                                
+                                <div align="center" style="padding-bottom: 5%;">
+
+                                    <div class="newToursSections2">
+                                        <img class="newToursSectionsSecondImg" src="https://www.negrilonestop.com/img/spot/Jamaica-Zipline-Adventure-Tour-Tandem.jpg" alt="">
+                                    </div>
+
+                                    <div class="newToursSections2">
+                                        <ul class="newToursSectionsUlTag">
+                                            <li style="font-weight: 800;">JAMAICA</li>
+                                            <li style="font-weight: 500;">NEW MYSTIC MOUNTAIN</li>
+                                            <li style="font-weight: 500;">JAMAIACA PACKAGES</li>
+                                            <li style="font-size: small;">Rates starting from: <a style="font-weight: 800;">$50</a></li>
+                                            <li style="font-size: small;padding-bottom:10%;">Duration: <a style="font-weight: 800;">3.5-6 hours</a></li>
+                                            <li style="font-size: small;">Get ready for a fun filled adventure</li>                                            
+                                            <li style="font-size: small;">700 ft. above sea level in the hear of</li>                                            
+                                            <li style="font-size: small;">Ocho Rios. The experience begins on</li>
+                                            <li style="font-size: small;">the sky explorer, a state-of-the-art</li>                                                                                        
+                                            <li style="font-size: small;">chairlift that sends you soaring above</li>                                                                                        
+                                            <li style="font-size: small;">the treetops providing sensational</li>  
+                                            <li style="font-size: small;">views of the sparkling sea and tropi</li>
+                                            <li style="font-size: small;">cal rainforest below.</li>                                                                                                                                                                                                                                                                      
+                                        </ul>
+                                        <div class="viewDetailsButtonNewToursWrapper">
+                                            <a href="" class="viewDetailsButtonNewTours"> > VIEW DETAILS</a>
+                                        </div> 
+                                    </div>
+
+                                </div>
+
+
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>    
+            <!-- New Tours -->
+
+
+            <!-- Why Book With Island Routes -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <div align="center" style="padding-bottom: 5%;">  
+
+                                <div style="padding-top:5%;padding-bottom: 5%;">
+                                    <h2 style="color:#1976d2;" class="whyBookHeader">WHY BOOK WITH ISLAND ROUTES?</h2>
+                                </div> 
+                                   
+                                <!-- https://stackoverflow.com/questions/22592064/how-to-align-text-below-an-image-in-css/22592136 -->
+                                <div class="item">
+                                    <img class="whyBookImg" src="https://i.ibb.co/R4R75Vb/1786971.png"/>
+                                    <span class="caption" style="color:black;">COMMITTED</span>
+                                </div>
+                                <div class="item">
+                                    <img class="whyBookImg" src="https://i.ibb.co/7NXDLbH/411779.png"/>
+                                    <span class="caption" style="color:black;">QUALITY</span>
+                                </div>
+                                <div class="item">
+                                    <img class="whyBookImg" src="https://i.ibb.co/kxxNpw9/838680.png"/>
+                                    <span class="caption" style="color:black;">HAND-PICKED</span>
+                                </div>
+                                <div class="item">
+                                    <img class="whyBookImg" src="https://i.ibb.co/7j9WWmY/3126507.png"/>
+                                    <span class="caption" style="color:black;">CARIBBEAN EXPERTS</span>
+                                </div>                         
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>                  
+            <!-- Why Book With Island Routes -->
+
+           
+            <!-- Book Now -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div align="center">
+
+                                <ul style="list-style: none;padding-left: 0%;">
+                                    <li class="boookNowCallUs" style="color:black !important;">BOOK NOW AT</li>
+                                    <li class="islandRoutesPhoneNumber" style="color:black !important;"><a style="color:black !important;" href="https://www.islandroutes.com/" >ISLANDROUTES.COM</a></li>
+                                    <li class="boookNowCallUs" style="color:black !important;">OR CALL US AT</li>
+                                    <li class="islandRoutesPhoneNumber" style="color:black !important;">1-877-768-8370</li>
+                                </ul>
+
+                                <hr style="  border-top: 3px solid black;
+                                width: 75%;
+                                ">
+
+                                <ul style="list-style: none;padding-left: 0%;">
+                                    <li class="openingTimes" style="color:black !important;">Lines are open: Monday-Friday, 8am - 8pm ET,</li>
+                                    <li class="openingTimes" style="color:black !important;">Saturday & Sun, 8am - 7pm ET</li>
+                                </ul>
+
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>    
+            <!-- Book Now -->
+
+            <!-- Shop Our Instagram -->
+
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                    <tbody>
+                        <tr>
+                            <td>
+
+                                <div align="center">
+                                    <h2 class="shopNowDisplayInlineBlock">
+                                        <a  style="color:#1976d2;text-decoration:none;font-weight:800">SHOP OUR</a> <a style="color:black !important;">INSTAGRAM</a>
+                                    </h2>
+                                    <img class="shopNowDisplayInlineBlockImg" src="https://i.ibb.co/pyVVBv2/instagram-sketched.png" alt="">
+                                </div>
+
+                                <div align="center" style="padding-bottom: 5%;">
+                                    <a>Follow us at <a style="color:#1976d2;" href="https://www.islandroutesblog.com/instagram/?utm_medium=email&utm_source=consumer&utm_campaign=newsletter_v1&utm_content=shopnowig_irat_none&utm_term=mar20_r1&cm_mmc=email-_-newsletter-_-consumer-_-shopnowig_irat">instagram.com/islandroutes</a> and you can shop our images!</a>
+                                </div>
+
+                                <div align="center">
+                                    
+                                    <div class="shopItem" style="padding-bottom:5%;">
+                                        <img class="shopItemImg" src="https://media.tacdn.com/media/attractions-splice-spp-360x240/06/d4/83/04.jpg"/>
+                                    </div>
+
+                                    <div class="shopItem" style="padding-bottom:5%;">
+                                        <img class="shopItemImg" src="https://www.travelweekly.com/uploadedImages/All_TW_Art/2017/0206/T0206JAM_HR.jpg?Anchor=MiddleCenter&width=780&height=440&scale=both&mode=crop"/>
+                                    </div>
+
+                                    <div class="shopItem" style="padding-bottom:5%;">
+                                        <img class="shopItemImg" src="https://media-cdn.tripadvisor.com/media/photo-s/0d/72/b0/45/kingston-city-tour.jpg"/>
+                                    </div>
+
+                                    <div class="shopItem" style="padding-bottom:5%;">
+                                        <img class="shopItemImg" src="https://cdn.travelpulse.com/images/99999999-9999-9999-9999-999999999999/0cd5d61f-bae2-affa-5a28-63cdcb4f47b8/630x355.jpg"/>
+                                    </div>
+
+                                    <div class="shopItem" style="padding-bottom:5%;">
+                                        <img class="shopItemImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSNgepyXkeZiMaeMe2o1ZqTWjO3eA0woZ6WDQ&usqp=CAU"/>
+                                    </div>
+
+                                    <div class="shopItem" style="padding-bottom:5%;">
+                                        <img class="shopItemImg" src="https://prnewswire2-a.akamaihd.net/p/1893751/sp/189375100/thumbnail/entry_id/0_rh81mtq5/def_height/2700/def_width/2700/version/100012/type/1"/>
+                                    </div>                                   
+
+                                    <div class="shopItem" style="padding-bottom:5%;">
+                                        <img class="shopItemImg" src="https://mk0agentcenterk362xd.kinstacdn.com/wp-content/uploads/2018/12/st-lucia-wet-n-wild-experience-500x375.jpg"/>
+                                    </div>
+
+                                    <div class="shopItem" style="padding-bottom:5%;">
+                                        <img class="shopItemImg" src="https://cdn.recommend.com/wp-content/uploads/2016/06/Garrafon-Zipline.jpg"/>
+                                    </div>
+
+                                    <div class="shopItem" style="padding-bottom:5%;">
+                                        <img class="shopItemImg" src="https://www.shoreexcursioneer.com/imgs/all_ages_can_enjoy_riding_horses_on_the_beach_455-12.jpg"/>
+                                    </div>
+                             
+
+                                </div>
+
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table> 
+
+            <!-- Shop Our Instagram -->
+
+
+            <!-- Talk To Us -->
+            
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                <tbody>
+                    <tr>
+                        <td>
+
+                            <div align="center">
+                                <ul class="talkToUs">
+                                    <li class="talkToUsHeader"
+                                    >
+                                    TALK TO US!
+                                    </li>
+                                    <li style="color:black;" class="talkToUsText">Have you been on an Island Routes adventure recently?</li>
+                                    <li style="color:black;" class="talkToUsText">We want to hear all about it! Review us on <a style="color:#1976d2;" href="https://www.trustpilot.com/review/www.islandroutes.com?utm_medium=email&utm_source=consumer&utm_campaign=newsletter_v1&utm_content=talktous_irat_none&utm_term=mar20_r1&cm_mmc=email-_-newsletter-_-consumer-_-talktous_irat">TrustPilot</a></li>
+                                </ul>
+                                <img class="talkToUsImg" src="https://i.ibb.co/2Mdx6yD/IRAT-Newsletter-March-2020-Consumer-16.jpg" alt="">
+                            </div>
+
+                            <div style="background-color:#1976d2;" align="center">
+                                <ul class="followUsMainWrapper">
+                                    <li class="followUsMain">Follow us for more #LiveFunner!</li>
+                                    <li class="followUs" style="color:white;display:inline-block"></li><a href="https://www.youtube.com/user/iluvmyroutes"><img class="followUsImg" src="https://i.ibb.co/rkS92dg/image-3.png" alt=""></a></li>
+                                    <li class="followUs" style="color:white;display:inline-block"></li><a href="https://www.facebook.com/IslandRoutes"><img class="followUsImg" src="https://i.ibb.co/BnVj3Ty/image-2.png" alt=""></a></li>
+                                    <li class="followUs" style="color:white;display:inline-block"></li><a href="https://twitter.com/IslandRoutes"><img class="followUsImg" src="https://i.ibb.co/nkS7hw1/image-1.png" alt=""></a></li>
+                                    <li class="followUs" style="color:white;display:inline-block"></li><a href="https://www.instagram.com/islandroutes/"><img class="followUsImg" src="https://i.ibb.co/VvFz2yM/image.png" alt=""></a></li>
+                                </ul>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>    
+                
+            </table>    
+            <!-- Talk To Us -->
+
+            <!-- Award Section -->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="awarSectionFirstDiv">
+
+                                    <!-- Left Image with text to the right of it                                     -->
+                                    <div class="awardSection firstAwardSection">
+
+                                        <div class="leftImageTextToTheRightOfIt">
+                                            <img class="awardSectionImg" src="https://i.ibb.co/2gYTP1Z/worldtravelaward.png" alt="">
+                                        </div>
+
+                                        <div class="leftImageTextToTheRightOfIt">
+                                            <a style="font-weight:800; color:black;">WORLD'S LEADING</a><br/>
+                                            <a style="border-bottom: 1px solid black;color:black;">CARIBBEAN ATTRACTION COMPANY</a><br/>
+                                            <a style="border-bottom: 1px solid black;color:black;">WORLD TRAVEL AWARDS 2020</a>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Images positioned to the right of the image and text positioned to the left  -->
+                                    <div class="awardSection">
+                                        <div style="display: inline-block;">
+                                            <img class="awardSectionImg" src="https://i.ibb.co/F6RyZXT/tripadvisor.png" alt="">
+                                        </div>
+                                        <div style="display: inline-block;">
+                                            <img class="awardSectionImg" src="https://i.ibb.co/nsqhkbW/sixstardiamondaward.png" alt="">
+                                        </div>    
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                  
+                </table>    
+            <!-- Award Section -->
+
+
+            <!-- Footer Section -->
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div style="background-color:black;">
+
+                                <ul class="footerText">
+                                    <li style="color:#1976d2;">Island Routes features quality transportation, expert Caribbean-native guides,</li>
+                                    <li  style="color:#1976d2;">the island's best sights, the highest safety standards, and unforgettable experiences.</li>
+                                    <li  style="color:white;text-align: right;
+                                    padding:10px;">> VIEW ALL AWARDS</li>
+                                </ul>
+
+                                <div align="center">
+                                    <img class="footerImg" src="https://i.ibb.co/ZTtZ64R/IRATS-LOGO.png" alt="">
+                                    <hr style="width:85%;height:2px;border-width:0;color:white;background-color:white;">                                       
+                                </div>  
+                                
+                                <ul class="footerText2">
+                                    <li style="color: #1976d2;font-weight:800;">DON'T MISS THE LATEST NEWS FROM ISLAND ROUTES CARIBBEAN ADVENTURES</li>
+                                    <li style="color: #1976d2;">This email was sent to you by Unique Vacations, Ltd. on behalf of Island Routes. To ensure delivery to your inbox (not</li>
+                                    <li style="color: #1976d2;">bulk or junk folders), please add <a style="color:white;text-decoration:underline;" href="" > sales@e.islandroutesmailings.com</a> to your address book.</li>
+
+                                    <li style="padding-top:5%;text-decoration:underline;color:white;">PRIVACY POLICY</li>
+                                    <li style="color: #1976d2;">Your privacy is important to us, which is why we offer you every opportunity to remove your email from our email list.</li>
+                                    <li style="color: #1976d2;"><a style="color:white;text-decoration:underline;" href="">unsubscribe</a> from the mailing list. Written inquiries can be sent to: General Counsel, Unique Vacations Ltd. Gilingam</li>
+                                    <li style="color: #1976d2;">House, P.O. Box SS-19020, Nassau, Bahamas. Electronic inquiries can be sent to <a style="color:white;text-decoration:underline;" href="">info@islandroutes.com</a></li>
+                                </ul>
+
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>              
+            </table>    
+
+            <!-- Footer Section -->
+
+  
+
+        </div>
+    </center>
+</body>
+</html>
